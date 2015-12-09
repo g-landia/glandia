@@ -807,8 +807,8 @@ footer .footer-logo a {
 }
 
 footer .footer-logo a img {
-   height: 24px;
-   width: 92px;
+   height: 25px;
+   width: 82px;
 }
 
 footer .right-cols .columns {
@@ -829,12 +829,12 @@ footer h3 {
 }
 
 footer h3:before {
-   font-family: 'FontAwesome';   
+   font-family: 'FontAwesome';
    margin: 0 0 6px 3px;
-   font-size: 30px;
+   font-size: 28px;
    line-height: 48px;
    text-align: left;
-   color: #738291;
+   color: #527bbc;
    display: block;
 }
 
