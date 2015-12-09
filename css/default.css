@@ -489,11 +489,11 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
    font: 14px/24px 'montserrat-bold', sans-serif;
-   background: #11ABB0;
+   background: #009acf;
    color: #fff;
-   display: inline-block;   
+   display: inline-block;
    text-decoration: none;
-   letter-spacing: 0;   
+   letter-spacing: 0;
    padding: 12px 20px;
    margin-bottom: 18px;
    border: none;
@@ -501,13 +501,11 @@ input[type="button"] {
    height: auto;
    text-transform: uppercase;
    letter-spacing: 2px;
-
    -webkit-transition: all .2s ease-in-out;
    -moz-transition: all .2s ease-in-out;
    -o-transition: all .2s ease-in-out;
    -ms-transition: all .2s ease-in-out;
    transition: all .2s ease-in-out;
-
    border-radius: 3px;
 }
 
@@ -828,23 +826,3 @@ properly.
    margin-right: auto !important;
    text-align: center !important;
 }
-
-/*  3. Counter -------------------------------------------------------- */
-
-#canvas_clock
-{
-   margin:0 auto;
-   margin-top:50px;
-   display:block;
-   margin-bottom:50px;
-}
-
-
-#target{
-  font-family:'montserrat-bold', sans-serif;
-  padding-bottom: 30px;
-  font-size: 26px;
-}
-
-/* 4. Countries Table ----------------------- */
-
