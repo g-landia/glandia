@@ -14,8 +14,8 @@
    ------------------------------------------------------------------ */
    .hero-text { width: 82%; }
    .hero-text h1 { font: 38px/1.2em 'montserrat-regular', sans-serif; } 
-	
-	/* Testimonials Section
+   
+   /* Testimonials Section
    ------------------------------------------------------------------- */
    #testimonials .text-container { width: 82%; }
 
@@ -30,8 +30,8 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
 
-	/* General and Common Styles */
-	.section-head h1 { font: 18px/30px 'montserrat-bold', sans-serif; }
+   /* General and Common Styles */
+   .section-head h1 { font: 18px/30px 'montserrat-bold', sans-serif; }
 
    /* Header Styles
    ------------------------------------------------------------------ */
@@ -96,8 +96,8 @@
 ---------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
 
-	/* General and Common Styles */
-	.section-head { padding: 0 30px; }
+   /* General and Common Styles */
+   .section-head { padding: 0 30px; }
 
    /* mobile navigation
    -------------------------------------------------------------------- */
@@ -111,34 +111,32 @@
       top: 0;
       right: 0;
    }
-   #nav-wrap > a {	   
+   #nav-wrap > a {
       text-align: left;
-		border: none;            
-      color: #fff;
+      border: none;
+      color: #01A4A4;
       font-size: 12px;
       height: 54px;
-      line-height: 54px; 
-      float: right;     
-                        
+      line-height: 54px;
+      float: right;
       font: 0/0 a;
       text-shadow: none;
       color: transparent;
-
       position: relative;
       top: 0px;
       right: 36px;
    }
-	#nav-wrap > a:before {
-	   font-family: 'FontAwesome';
+   #nav-wrap > a:before {
+      font-family: 'FontAwesome';
       content: "\f0c9";
-      color: #fff;
+      color: #01A4A4;
       margin: 0;
       font-size: 25px;
       line-height: 54px;
-      text-align: left;      
-      display: block; 
-      float: right;     
-	}
+      text-align: left;
+      display: block;
+      float: right;
+   }
 
    /* hide menu panel */
    #nav-wrap ul#nav {
@@ -155,10 +153,10 @@
    }
    
    /* display toggle buttons */
-	.no-js #nav-wrap:not( :target ) > a:first-of-type,
-	.no-js #nav-wrap:target > a:last-of-type  {
-	   display: block;
-	} 
+   .no-js #nav-wrap:not( :target ) > a:first-of-type,
+   .no-js #nav-wrap:target > a:last-of-type  {
+      display: block;
+   } 
    .js #nav-wrap a { display: block; }  
 
    /* display menu panels - no JS*/
@@ -299,8 +297,8 @@
    /* Go To Top Button */
    #go-top { margin-left: -22px; }
    #go-top a {
-   	width: 54px;
-   	height: 54px;
+      width: 54px;
+      height: 54px;
       font-size: 18px;
       line-height: 54px;
    }

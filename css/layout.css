@@ -75,8 +75,8 @@ header .logo a {
    padding: 0;
    border: none;
    outline: none;
-   width: 120px;
-   height: 25px;
+   width: 150px;
+   height: 30px;
 }
 
 /* header social */
@@ -93,7 +93,7 @@ header .header-social li {
    display: inline-block;
    margin-right: 20px;
 }
-header .header-social li a {color: #fff;}
+header .header-social li a {color: #009acf;font-size: 16px;margin-right: 2px;margin-left: 2px;}
 header .header-social li a:hover { color: #11ABB0; }
 
 
@@ -157,9 +157,9 @@ color: #58687A;
 
 transition: color .2s ease-in-out;
 }
-ul#nav li a:hover { color: #11ABB0; }
+ul#nav li a:hover {color: #009acf;}
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a {color: #01A4A4;}
+ul#nav li.current a {color: #009acf;}
 
 /* ------------------------------------------------------------------ */
 /* c. Main Section
@@ -167,7 +167,7 @@ ul#nav li.current a {color: #01A4A4;}
 
 #main {
    padding-top: 100px;
-   padding-bottom: 70px;
+   padding-bottom: 40px;
    background: #fff url(img/);
    overflow: hidden;
 }
@@ -352,7 +352,7 @@ ul.features li:nth-child(even) { }
 /* ------------------------------------------------------------------ */
 
 #goals {
-   background: #fff url(img/grey.png);
+   background: #fff url(img/);
    padding-top: 96px;
    padding-bottom: 120px;
 }
@@ -512,7 +512,7 @@ ul.features li:nth-child(even) { }
 /* ------------------------------------------------------------------ */
 
 #inspiration {
-   background: #01A4A4;
+   background: #009acf;
    padding-top: 112px;
    padding-bottom: 66px;
    position: relative;
@@ -809,7 +809,7 @@ footer .copyright {
    display: block;
    width: 60px;
    height: 60px;
-   background: #11ABB0;
+   background: #009acf;
    -webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
    -o-transition: all 0.2s ease-in-out;
