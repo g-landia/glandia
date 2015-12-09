@@ -82,21 +82,44 @@ header .logo a {
 /* header social */
 header .header-social {
    font-size: 20px;
-   font-weight: normal;
+   font-weight: lighter;
    line-height: 54px;
    color: #424a56;
    margin: 0 10px 0 0;
-   padding: 0;
+   padding-right: 3em;
    float: right;
 }
 
 header .header-social li {
    display: inline-block;
-   margin-right: 20px;
+   margin-right: 10px;
 }
 
-header .header-social li a {color: #543e67;font-size: 20px;margin-right: 2px;margin-left: 2px;}
-header .header-social li a:hover { color: #11ABB0; }
+header .header-social li a {color: #543e67;font-size: 17px;margin-right: 2px;margin-left: 2px;}
+header .header-social li a:hover { color: #527bbc; }
+
+
+header .button-login {
+   font: 12px/12px 'montserrat-bold', sans-serif;
+   background: none;
+   color: #616161;
+   display: inline-block;
+   text-decoration: none;
+   letter-spacing: 0;
+   padding: 12px 18px;
+   margin-bottom: 18px;
+   border: 1px solid #527bbc;
+   cursor: pointer;
+   height: auto;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   -webkit-transition: all .2s ease-in-out;
+   -moz-transition: all .2s ease-in-out;
+   -o-transition: all .2s ease-in-out;
+   -ms-transition: all .2s ease-in-out;
+   transition: all .2s ease-in-out;
+   border-radius: 3px;
+}
 
 /* primary navigation
 --------------------------------------------------------------------- */

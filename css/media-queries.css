@@ -141,15 +141,14 @@
    /* hide menu panel */
    #nav-wrap ul#nav {
       padding: 24px 36px 48px 36px;
-      background: #1D2025; 
+      background: #fff;
       height: auto;
       display: none;
       clear: both;
-      width: auto; 
-            
+      width: auto;
       position: relative;
       top: 0;
-      right: 30px;           
+      right: 0px;
    }
    
    /* display toggle buttons */
