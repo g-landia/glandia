@@ -24,8 +24,3 @@ function ptn(id, a, b, c)
 
 //ptn(identifier, endValue, duration[in ms], nbDecimales);
 ptn("target", 100008, 1331, 0);
-
-
-$('#toggle-login').click(function(){
-  $('#login').toggle();
-});
