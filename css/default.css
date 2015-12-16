@@ -167,14 +167,13 @@ table {
 html { font-size: 62.5%; }
 
 body {
-   background: #fff;
+   background: #f5f5f5;
    font-family: 'opensans-regular', sans-serif;
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
    color: #838C95;
-
-   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+   -webkit-font-smoothing: antialiased;/* Fix for webkit rendering */
    -webkit-text-size-adjust: 100%;
 }
 
@@ -629,7 +628,7 @@ input[type="checkbox"] { display: inline; }
 
 .narrow .row { max-width: 980px; }
 
-.row .row { width: auto; max-width: none; margin: 0 -18px; }
+.row .row { width: auto; max-width: none;margin: 0 -18px;}
 
 /* row clearing */
 .row:before,
@@ -665,7 +664,7 @@ input[type="checkbox"] { display: inline; }
 .row .two         { width: 16.66667%; }
 .row .three       { width: 25%; }
 .row .four        { width: 33.33333%; }
-.row .five        { width: 41.66667%; }
+.row .five        { width: 41.66667%;padding-left: 20px;}
 .row .six         { width: 50%; }
 .row .seven       { width: 58.33333%; }
 .row .eight       { width: 66.66667%; }

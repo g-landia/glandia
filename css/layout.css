@@ -22,7 +22,7 @@
 /* a. General and Common Styles
 /* ------------------------------------------------------------------ */
 
-body {background: #fff;}
+body {background: #f5f5f5;}
 
 .section-head {
    padding: 0 4%;
@@ -1317,7 +1317,7 @@ ul#nav li.current a {color: #fff;}
 #main {
    padding-top: 100px;
    padding-bottom: 40px;
-   background: #ffffff;
+   background: #f5f5f5;
    overflow: hidden;
 }
 
@@ -1398,7 +1398,7 @@ ul#nav li.current a {color: #fff;}
    -moz-animation-iteration-count: 3;
 }
 
-#main .buttons .subscribe:hover { background: #F86A5A; }
+#main .buttons .subscribe:hover { background: #3a5795; color:#fff; }
 #main .buttons .learn-more {}
 
 
@@ -1407,7 +1407,7 @@ ul#nav li.current a {color: #fff;}
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #fff;
+   background: #f5f5f5;
    padding-top: 96px;
    padding-bottom: 8px;
    overflow: hidden;
@@ -1633,7 +1633,7 @@ ul.features li:nth-child(even) { }
 /* ------------------------------------------------------------------ */
 
 #call-to-action {
-   background: #fff;
+   background: #f5f5f5;
    padding-top: 98px;
    padding-bottom: 58px;
 }
@@ -2013,12 +2013,12 @@ ul.features li:nth-child(even) { }
 /* ------------------------------------------------------------------ */
 
 footer {
-   padding-top: 84px;
+   padding-top: 24px;
    margin-bottom: 60px;
    color: #3c4753;
    font-size: 13px;
    line-height: 24px;
-   position: relative;   
+   position: relative;
 }
 
 footer p {
@@ -2064,7 +2064,6 @@ footer h3:before {
    font-size: 28px;
    line-height: 48px;
    text-align: left;
-   color: #edf0f5;
    display: block;
 }
 
@@ -2084,12 +2083,12 @@ footer ul li {
 footer ul li a,
 footer ul li a:visited {color: #95a5a6;}
 footer ul li a:hover,
-footer ul li a:focus { color: #fff; }
+footer ul li a:focus { color: #95a5a6; }
 
 /* copyright */
 footer .copyright {
-   margin-top: 8px;
-   padding: 0 10px;
+   padding-top: 28px;
+   padding-left: 10px;
    clear: both;
    font-size: 13px;
    /* text-align: center; */
