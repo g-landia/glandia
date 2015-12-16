@@ -196,7 +196,7 @@ h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 .subheader { }
 
-p { margin: 0 0 30px 0; }
+p {margin: 0 0 16px 0;color: #000;font-size: 16px;}
 p img { margin: 0; }
 p.lead {
    font: 19px/36px 'opensans-light', sans-serif;
@@ -491,14 +491,14 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
    font: 14px/24px 'montserrat-bold', sans-serif;
-   background: #527bbc;
+   background: #3a5795;
    color: #fff;
    display: inline-block;
    text-decoration: none;
    letter-spacing: 0;
    padding: 12px 20px;
    margin-bottom: 18px;
-   border: none;
+   border: 1px solid #fff;
    cursor: pointer;
    height: auto;
    text-transform: uppercase;
@@ -516,7 +516,7 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-   background: #2980b9;
+   background: #3a5795;
    color: #fff;
 }
 
