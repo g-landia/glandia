@@ -1398,8 +1398,8 @@ ul#nav li.current a {color: #fff;}
    -moz-animation-iteration-count: 3;
 }
 
-#main .buttons .subscribe:hover { background: #3a5795; color: #fff; }
-
+#main .buttons .subscribe:hover { background: #F86A5A; }
+#main .buttons .learn-more {}
 
 
 /* ------------------------------------------------------------------ */
