@@ -556,19 +556,18 @@ input[type="email"],
 textarea,
 select {
    display: block;
-   padding: 18px 15px;
+   padding: 15px 15px;
    margin: 0 0 24px 0;
-   border: 0;
+   /* border: 0; */
    outline: none;
    vertical-align: middle;
-   min-width: 225px;
+   min-width: 235px;
    max-width: 100%;
-   font-size: 15px;
+   font-size: 18px;
    line-height: 24px;
    color: #647373;
    background: #D3D9D9;
    border-radius: 3px;
-
 }
 
 /* select { padding: 0;
@@ -830,16 +829,16 @@ properly.
 
 /*default styles*/
 #registration {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 40px;
-    height: 800px;
+    height: 630px;
     overflow: hidden;
     }
 
 /*form styles*/
 #msform {
    width: 600px;
-   margin: 50px auto;
+   margin: 30px auto;
    text-align: center;
    position: relative;
 }
@@ -847,11 +846,11 @@ properly.
    background: white;
    border: 1px solid #eee;
    border-radius: 3px;
-   /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
    padding: 20px 30px;
    box-sizing: border-box;
-   width: 100%;
-   /* margin: 0 10%; *//*stacking fieldsets above each other*/
+   width: 50%;
+   margin: 0 25%;/*stacking fieldsets above each other*/
    position: absolute;
 }
 /*Hide all except first fieldset*/
@@ -863,18 +862,21 @@ properly.
    padding: 15px;
    border: 1px solid #ccc;
    border-radius: 3px;
-   margin-bottom: 10px;
-   width: 40%;
+   margin-bottom: 20px;
+   width: 50%;
    box-sizing: border-box;
    font-family: inherit;
+   letter-spacing: 1px;
    color: #2C3E50;
-   font-size: 13px;
+   background: #f5f5f5;
+   font-size: 15px;
 }
 /*buttons*/
 #msform .action-button {
-   width: 100px;
+   width: 105px;
    background: none;
    font-weight: bold;
+   font-size: 12px;
    font-family: inherit;
    color: #616161;
    border: 2px solid #527bbc;
@@ -903,7 +905,7 @@ properly.
 }
 /*progressbar*/
 #progressbar {
-   margin-bottom: 30px;
+   margin-bottom: 20px;
    overflow: hidden;/*CSS counters to number the steps*/
    counter-reset: step;
 }
@@ -946,8 +948,8 @@ properly.
    /*connector not needed before the first step*/
    content: none; 
 }
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
+/*marking active/completed steps blue*/
+/*The number of the step and the connector before it = blue*/
 #progressbar li.active:before,  #progressbar li.active:after{
    background: #3a5795;
    color: white;
