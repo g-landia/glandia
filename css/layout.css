@@ -600,6 +600,7 @@ ul#nav li.current a {color: #fff;}
 footer {
    padding-top: 24px;
    margin-bottom: 20px;
+   /* border-top: 1px solid #eee; */
    color: #3c4753;
    font-size: 13px;
    line-height: 24px;
