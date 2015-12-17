@@ -532,7 +532,7 @@ ul#nav li.current a {color: #fff;}
 
 #subscribe {
    background: #3a5795;
-   padding-top: 226px;
+   padding-top: 150px;
    height: 645px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -599,7 +599,7 @@ ul#nav li.current a {color: #fff;}
 
 footer {
    padding-top: 24px;
-   margin-bottom: 60px;
+   margin-bottom: 20px;
    color: #3c4753;
    font-size: 13px;
    line-height: 24px;
@@ -672,11 +672,12 @@ footer ul li a:focus { color: #95a5a6; }
 
 /* copyright */
 footer .copyright {
-   padding-top: 28px;
+   padding-top: 38px;
    padding-left: 10px;
    clear: both;
+   color: #666;
    font-size: 13px;
-   /* text-align: center; */
+   text-align: center;
 }
 
 /* ------------------------------------------------------------------ */
