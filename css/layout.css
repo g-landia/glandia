@@ -583,6 +583,7 @@ ul#nav li.current a {color: #fff;}
    display: inline;
    float: left;
    height: 60px;
+   border: 0;
    margin: 0;
    padding: 18px 20px;
    font-size: 18px;
