@@ -59,7 +59,7 @@
 }
 
 body {
-	background: #1f253d;
+	background: #f5f5f5;
 }
 
 ul {
@@ -262,8 +262,8 @@ h1, h2, p, a, span{
 					transition: background .3s;
 				}
 					.header-menu-tab:hover {
-						background: #50597b;
-						border-bottom: 4px solid #11a8ab;
+						background: #3a5795;
+						border-bottom: 4px solid #35aadc;
 						text-decoration: none;
 					}
 					.header-menu-tab .icon {
@@ -274,7 +274,7 @@ h1, h2, p, a, span{
 					line-height: 22px;
 					padding: 0 6px;
 					font-weight: 700;
-					background: #e64c65;
+					background: #35aadc;
 					border-radius: 100%;
 					top: 15px;
 					right: 2px;
@@ -313,11 +313,14 @@ h1, h2, p, a, span{
 	.container {
 		float: left;
 		width: 300px;
+		box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52);
 	}
 		.block {
 			margin-bottom: 25px;
-			background: #394264;
+			background: #3a5795;
 			border-radius: 5px;
+			border-bottom: 1px solid #133783;
+			box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52);
 		}
 		/******************************************** LEFT CONTAINER *****************************************/
 		.left-container {}
@@ -325,7 +328,7 @@ h1, h2, p, a, span{
 				height: 360px;
 			}
 				.menu-box .titular {
-					background: #11a8ab;
+					background: #35aadc;
 				}
 				.menu-box-menu .icon {
 					display: inline-block;
@@ -768,7 +771,7 @@ h1, h2, p, a, span{
 								color: #fcb150;
 							}
 							.profile-options a:hover.views .icon {
-								color: #11a8ab;
+								color: #35aadc;
 							}
 							.profile-options a:hover.likes .icon {
 								color: #e64c65;
@@ -780,7 +783,7 @@ h1, h2, p, a, span{
 								border-top: 4px solid #fcb150;
 							}
 							.profile-options .views {
-								border-top: 4px solid #11a8ab;
+								border-top: 4px solid #35aadc;
 							}
 							.profile-options .likes {
 								border-top: 4px solid #e64c65;
@@ -789,7 +792,7 @@ h1, h2, p, a, span{
 				height: 555px;
 			}
 				.weather .titular {
-					background: #cc324b;
+					background: #35aadc;
 				}
 					.weather .titular .icon {
 						padding-right: 15px;
@@ -797,7 +800,7 @@ h1, h2, p, a, span{
 					}
 				.weather .current-day {
 					height: 135px;
-					background: #e64c65;
+					background: #35aadc;
 				}
 					.weather .current-day p {
 						margin: 0;

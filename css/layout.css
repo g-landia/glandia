@@ -295,7 +295,7 @@ ul#nav li.current a {color: #fff;}
 }
 
 #about h3 {
-   font: 16px/24px 'montserrat-bold', sans-serif;
+   font: 18px/24px 'montserrat-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    color: #3a5795;
@@ -365,7 +365,7 @@ ul#nav li.current a {color: #fff;}
    padding-top: 112px;
    padding-bottom: 66px;
    position: relative;
-   min-height: 198px;
+   min-height: 650px;
    width: 100%;
    overflow: hidden;
    text-align: center;
@@ -397,6 +397,7 @@ ul#nav li.current a {color: #fff;}
 
 #inspiration .text-container {
    width: 86%;
+   padding-top: 10em;
    margin: 0 auto;
 }
 
