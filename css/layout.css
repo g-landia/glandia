@@ -20,7 +20,7 @@
 /* a. General and Common Styles
 /* ------------------------------------------------------------------ */
 
-body {background: #fff;}
+body {background: #f5f5f5;}
 
 .section-head {
    padding: 0 4%;
@@ -214,7 +214,7 @@ ul#nav li.current a {color: #fff;}
    color: #527bbc;
    padding: 0;
    margin: 0;
-   text-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+   /* text-shadow: 0px 1px 4px rgba(0, 0, 0, .2); */
 }
 
 .main-text h1 span,
@@ -224,7 +224,7 @@ ul#nav li.current a {color: #fff;}
    color: #333;
    padding: 0;
    margin: 12px 8% 0;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+   /* text-shadow: 0px 1px 2px rgba(0, 0, 0, .2); */
 }
 
 /* Main Image */
@@ -532,7 +532,8 @@ ul#nav li.current a {color: #fff;}
 
 #subscribe {
    background: #3a5795;
-   padding-top: 96px;
+   padding-top: 226px;
+   height: 645px;
    padding-bottom: 66px;
    overflow: hidden;
    text-align: center;
