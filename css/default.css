@@ -831,7 +831,7 @@ properly.
 #registration {
     /* padding-top: 20px; */
     padding-bottom: 40px;
-    height: 630px;
+    height: 620px;
     overflow: hidden;
     }
 
@@ -849,8 +849,8 @@ properly.
    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
    padding: 20px 30px;
    box-sizing: border-box;
-   width: 50%;
-   margin: 0 25%;/*stacking fieldsets above each other*/
+   width: 100%;
+   margin: 0 0%;/*stacking fieldsets above each other*/
    position: absolute;
 }
 /*Hide all except first fieldset*/
@@ -929,8 +929,8 @@ properly.
    line-height: 50px;
    display: block;
    font-size: 15px;
-   color: #333;
-   background: white;
+   color: #fff;
+   background: #9daccb;
    border-radius: 40px;
    margin: 0 auto 20px auto;
 }
@@ -955,8 +955,5 @@ properly.
    background: #3a5795;
    color: white;
 }
-
-
-
 
 
