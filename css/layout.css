@@ -337,8 +337,9 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
 #call-to-action .action .button { text-align: center; }
 #call-to-action h2 {
    font: 30px/40px 'montserrat-bold', sans-serif;
-   color: #333;
+   color: #666;
    margin-bottom: 12px;
+   margin-top: 12px;
 }
 
 #call-to-action h2 a {
@@ -546,7 +547,7 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
 #subscribe p {
    color: #ecf0f1;
    text-align: center;
-   padding: 0;
+   padding-top: 12px;
 }
 
 /* mailchimp signup form */
@@ -555,8 +556,9 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
    clear: both;
    display: block;
    margin: 6px auto 30px auto;
+   padding-top: 12px;
    width: 70%;
-   text-align: center;   
+   text-align: center;
 }
 
 #mc_embed_signup:before,
@@ -601,7 +603,7 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
 footer {
    padding-top: 24px;
    margin-bottom: 20px;
-   /* border-top: 1px solid #eee; */
+   border-top: 1px solid #eee;
    color: #3c4753;
    font-size: 13px;
    line-height: 24px;
@@ -645,18 +647,7 @@ footer h3 {
    letter-spacing: 1px;
 }
 
-footer h3:before {
-   font-family: 'FontAwesome';
-   margin: 0 0 6px 3px;
-   font-size: 28px;
-   line-height: 48px;
-   text-align: left;
-   display: block;
-}
 
-footer h3.address:before { content: "\f041"; }
-footer h3.social:before { content: "\f0c0"; }
-footer h3.contact:before { content: "\f0e0"; }
 
 footer ul {
    margin: 0;
@@ -674,11 +665,11 @@ footer ul li a:focus { color: #95a5a6; }
 
 /* copyright */
 footer .copyright {
-   padding-top: 38px;
+   /* padding-top: 38px; */
    padding-left: 10px;
    clear: both;
    color: #666;
-   font-size: 13px;
+   font-size: 12px;
    text-align: center;
 }
 
