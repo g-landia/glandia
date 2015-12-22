@@ -1044,6 +1044,8 @@ properly.
   display: block;
   line-height: 60px;
   margin: 0;
+  font-size: 20px;
+  color: white;
   text-align: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -1066,11 +1068,12 @@ properly.
     }
     .arrow-btn.left {
       border-top-left-radius: 5px;
+      top: 0.9em;
     }
     .arrow-btn.right {
       border-top-right-radius: 5px;
       right: 0;
-      top: 0;
+      top: 0.9em;
     }
     .arrow-btn .icon {
       display: block;
@@ -1112,7 +1115,7 @@ properly.
 #main-container {
   font-family: 'Lato', sans-serif;
   width: 950px;
-  height: 925px;
+  height: 800px;
   margin: 6em auto;
 } 
   /*********************************************** HEADER ***********************************************/
@@ -1722,7 +1725,7 @@ properly.
               padding-left: 10px;
             }
       .tweets {
-        height: 375px;
+        height: 410px;
       }
         .tweets .titular {
           background: #35aadc;
@@ -1905,7 +1908,8 @@ properly.
             background: linear-gradient(to right, #4fc4f6 43%,#50597b 43%); /* W3C */
           }
       .calendar-day {
-        height: 320px;
+        min-height: 410px;
+        width: 630px;
         background: #3468af;
       }
         .calendar-day .titular {
@@ -1917,7 +1921,7 @@ properly.
         .calendar-day .the-day {
           margin: 0;
           text-align: center;
-          font-size: 146px;
+          font-size: 46px;
         }
         .add-event.button {
           background: #4fc4f6;
