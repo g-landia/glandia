@@ -8,18 +8,22 @@
 <head>
    <!--- Basic Page Needs
    ================================================== -->
-   <meta charset="utf-8">
-   <title>G-Landia - Land of Good</title>
-   <meta name="description" content="">  
-   <meta name="author" content="inkyotogrand">
+  <meta charset="utf-8">
+  <title>G-Landia - Profile Page</title>
+  <meta name="description" content="">  
+  <meta name="author" content="inkyotogrand">
     
    <!-- Mobile Specific Metas
    ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
     
-   <!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/style.css">
+  <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/prettyPhoto.css"> 
 
    <!-- Favicons
    ================================================== -->
@@ -27,191 +31,320 @@
 </head>
 
 <body> 
-
-        <div class="main-container">
-    <!-- Header
+      <!-- Header
    ================================================== -->
-            <header class="block">
-                <ul class="header-menu horizontal-list">
-                    <li>
-                        <a class="header-menu-tab" href="#2"><span class="icon fontawesome-user scnd-font-color"></span>Account</a>
-                    </li>
-                    <li>
-                        <a class="header-menu-tab" href="#1"><span class="icon entypo-cog scnd-font-color"></span>Settings</a>
-                    </li>
-                    <li>
-                        <a class="header-menu-tab" href="#3"><span class="icon fontawesome-envelope scnd-font-color"></span>Messages</a>
-                        <a class="header-menu-number" href="#4">5</a>
-                    </li>
-                </ul>
-                <div class="profile-menu">
-                    <p>Me <a href="#26"><span class="entypo-down-open scnd-font-color"></span></a></p>
-                    <div class="profile-picture small-profile-picture">
-                        <img width="40px" alt="user picture" src="images/user.jpg">
-                    </div>
+   <header>
+      <div class="logo">
+         <a class="smoothscroll" href=""><img alt="" src="images/logo.png"></a>
+      </div>
+      <nav id="nav-wrap">           
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>         
+         <ul id="nav" class="nav">
+            <li><a href=""><i class="fa fa-user"></i>
+            Account</a></li>
+            <li><a href=""><i class="fa fa-cog fa-fw"></i>Settings</a></li>
+             <li><a href=""><i class="fa fa-envelope-o"></i>
+             Messages</a></li>           
+         </ul> <!-- end #nav -->                  
+      </nav> <!-- end #nav-wrap -->
+     <ul class="header-social">
+          <li>Log out</li><i class="fa fa-angle-down"></i>
+      </ul>
+   </header> <!-- Header End -->
+
+   <!-- Homepage Main Container
+   ================================================== -->
+   <section id="main-container">
+    <div class="row">
+       <!-- Profile Block
+   ================================================== -->
+       <div class="four columns">
+               <div class="profile block"> <!-- PROFILE (MIDDLE-CONTAINER) -->
+                <div class="profile-picture big-profile-picture clear">
+                  <img width="150px" alt="user picture" src="images/user.jpg" >
                 </div>
-            </header>
-
-
-                        <h1>G-Olympics</h1>
-
-
-            <!-- LEFT-CONTAINER -->
-            <div class="left-container container">
-                <div class="profile block"> <!-- PROFILE (MIDDLE-CONTAINER) -->
-                    <a class="add-button" href="#28"><span class="icon entypo-plus scnd-font-color"></span></a>
-                    <div class="profile-picture big-profile-picture clear">
-                        <img width="150px" alt="user picture" src="images/user.jpg" >
-                    </div>
-                    <h1 class="user-name">Ivan Ivanov</h1>
-                    <div class="profile-description">
-                        <p class="scnd-font-color">Russia</p>
-                    </div>
-                    <ul class="profile-options horizontal-list">
-                        <li><a class="comments" href="#40"><p><span class="icon fontawesome-comment-alt scnd-font-color"></span>23</li></p></a>
-                        <li><a class="views" href="#41"><p><span class="icon fontawesome-eye-open scnd-font-color"></span>841</li></p></a>
-                        <li><a class="likes" href="#42"><p><span class="icon fontawesome-heart-empty scnd-font-color"></span>49</li></p></a>
-                    </ul>
-                </div>
-                
-               
-
-                <div class="line-chart-block block clear"> <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
-                    <div class="line-chart">
-                      <!-- LINE-CHART by @kseso http://codepen.io/Kseso/pen/phiyL -->
-                        <div class='grafico'>
-                           <ul class='eje-y'>
-                             <li data-ejeY='30'></li>
-                             <li data-ejeY='20'></li>
-                             <li data-ejeY='10'></li>
-                             <li data-ejeY='0'></li>
-                           </ul>
-                           <ul class='eje-x'>
-                             <li>Apr</li>
-                             <li>May</li>
-                             <li>Jun</li>
-                           </ul>
-                             <span data-valor='25'>
-                               <span data-valor='8'>
-                                 <span data-valor='13'>
-                                   <span data-valor='5'>   
-                                     <span data-valor='23'>   
-                                     <span data-valor='12'>
-                                         <span data-valor='15'>
-                                         </span></span></span></span></span></span></span>
-                        </div>
-                        <!-- END LINE-CHART by @kseso http://codepen.io/Kseso/pen/phiyL -->
-                    </div>
-                    <ul class="time-lenght horizontal-list">
-                        <li><a class="time-lenght-btn" href="#14">Week</a></li>
-                        <li><a class="time-lenght-btn" href="#15">Month</a></li>
-                        <li><a class="time-lenght-btn" href="#16">Year</a></li>
-                    </ul>
-                    <ul class="month-data clear">
-                        <li>
-                            <p>APR<span class="scnd-font-color"> 2013</span></p>
-                            <p><span class="entypo-plus increment"> </span>21<sup>%</sup></p>
-                        </li>
-                        <li>
-                            <p>MAY<span class="scnd-font-color"> 2013</span></p>
-                            <p><span class="entypo-plus increment"> </span>48<sup>%</sup></p>
-                        </li>
-                        <li>
-                            <p>JUN<span class="scnd-font-color"> 2013</span></p>
-                            <p><span class="entypo-plus increment"> </span>35<sup>%</sup></p>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
+                  <h1 class="user-name">Ivan Ivanov</h1>
+                <div class="profile-description">
+                  <p class="scnd-font-color">Russia</p>
+                    <p>My G's: 821 G's for Charity:234</p>
+                </div>      
+          </div>
+        </div>
 
             <!-- MIDDLE-CONTAINER -->
-            <div class="middle-container container">
-                <div class="weather block clear"> <!-- WEATHER (MIDDLE-CONTAINER) -->
-                    <h2 class="titular"><strong>MY GOALS</strong></h2>
-                    <div class="current-day">
-                        <p class="current-day-date">FRI 29/06</p>
-                        <p class="current-day-temperature">24º<span class="icon-cloudy"></span></p>
-                    </div>
-                    <ul class="next-days">
-                        <li>
-                            <a href="#43">
-                                <p class="next-days-date"><span class="day">SAT</span> <span class="scnd-font-color">29/06</span></p>
-                                <p class="next-days-temperature">25º<span class="icon icon-cloudy scnd-font-color"></span></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#44">
-                                <p class="next-days-date"><span class="day">SUN</span> <span class="scnd-font-color">30/06</span></p>
-                                <p class="next-days-temperature">22º<span class="icon icon-cloudy2 scnd-font-color"></span></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#45">
-                                <p class="next-days-date"><span class="day">MON</span> <span class="scnd-font-color">01/07</span></p>
-                                <p class="next-days-temperature">24º<span class="icon icon-cloudy2 scnd-font-color"></span></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#46">
-                                <p class="next-days-date"><span class="day">TUE</span> <span class="scnd-font-color">02/07</span></p>
-                                <p class="next-days-temperature">26º<span class="icon icon-cloudy scnd-font-color"></span></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="next-days-date"><span class="day">WED</span> <span class="scnd-font-color">03/07</span></p>
-                                <p class="next-days-temperature">27º<span class="icon icon-sun scnd-font-color"></span></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="next-days-date"><span class="day">THU</span> <span class="scnd-font-color">04/07</span></p>
-                                <p class="next-days-temperature">29º<span class="icon icon-sun scnd-font-color"></span></p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="eight columns">
+            <table>
+           <div id="head_nav">
+        <tr>
+          <th>Goals/Days</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+      </tr>
+      </div>  
+      <tr>
+        <th>Didn't Lie</th>
+            <td> 
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+            </td>
+            <td> 
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+            </td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+          </td>
+    </div>
+    </tr>
+    <tr>
+        <th>Didn't Smoke</td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+          </td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label></td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+           </td>
+    </div>
+    </tr>
+    <tr>
+        <th>Went Jogging</td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+           </td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label></td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+           <input type="checkbox" id="test16">
+           <label for="test16">no</label>
+         </td>
+     </div>
+     </tr>
+     <tr>
+        <th>Studied Math</td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+          </td>
+            <td><input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+          </td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+            </td>
+    </div>
+    </tr>
+    <tr>
+        <th>Read a Book</td>
+             <td>
+             <input type="checkbox" id="test15">
+             <label for="test15">yes</label>
+             <input type="checkbox" id="test16">
+             <label for="test16">no</label></td>
+             <td>
+             <input type="checkbox" id="test15">
+             <label for="test15">yes</label>
+             <input type="checkbox" id="test16">
+             <label for="test16">no</label>
+             </td>
+             <td>
+             <input type="checkbox" id="test15">
+             <label for="test15">yes</label>
+             <input type="checkbox" id="test16">
+             <label for="test16">no</label>
+            </td>
+         </div>
+       </div>
+       </tr>
+    </table>
+  </div>
+ </div>
 
-                 <div class="donut-chart-block block"> <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
-                    <h2 class="titular">SPECIAL OFFERS<br><span class="scnd-font-color">Harley Davidson - 60%</span></h2>
-                    <div class="donut-chart">
-                        <!-- DONUT-CHART  -->
-                        <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
-                        <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
-                        <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
-                        <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
-                        <!-- END DONUT-CHART -->    
-                    </div>
-                    <ul class="os-percentages horizontal-list">
-                        <li>
-                            <p class="ios os scnd-font-color">iOS</p>
-                            <p class="os-percentage">21<sup>%</sup></p>
-                        </li>
-                        <li>
-                            <p class="mac os scnd-font-color">Mac</p>
-                            <p class="os-percentage">48<sup>%</sup></p>
-                        </li>
-                        <li>
-                            <p class="linux os scnd-font-color">Linux</p>
-                            <p class="os-percentage">9<sup>%</sup></p>
-                        </li>
-                        <li>
-                            <p class="win os scnd-font-color">Win</p>
-                            <p class="os-percentage">32<sup>%</sup></p>
-                        </li>
-                    </ul>
-                </div>
-                
-                
-            </div>
 
-            <!-- RIGHT-CONTAINER -->
-            <div class="right-container container">
-                
-            </div> <!-- end right-container -->
-        </div> <!-- end main-container -->
-    </body>
+  <div class="row">
+       <div class="four columns">
+               <div class="profile block"> <!-- PROFILE (MIDDLE-CONTAINER) -->
+                <div class="profile-picture big-profile-picture clear">
+                  <img width="150px" alt="user picture" src="images/user.jpg">
+                </div>
+                  <h1 class="user-name">Ivan Ivanov</h1>
+                <div class="profile-description">
+                  <p class="scnd-font-color">Russia</p>
+                    <p>My G's: 821 G's for Charity:234</p>
+                </div>      
+          </div>
+        </div>
+
+            <!-- MIDDLE-CONTAINER -->
+            <div class="eight columns">
+            <div id="head_nav">
+        </div><table>
+           <tbody><tr>
+          <th>Goals/Days</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+      </tr>
+        
+      <tr>
+        <th>Didn't Lie</th>
+            <td> 
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+            </td>
+            <td> 
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+            </td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+          </td>
+    
+    </tr>
+    <tr>
+        <th>Didn't Smoke
+            </th><td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+          </td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label></td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+           </td>
+    
+    </tr>
+    <tr>
+        <th>Went Jogging
+            </th><td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+           </td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label></td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+           <input type="checkbox" id="test16">
+           <label for="test16">no</label>
+         </td>
      
+     </tr>
+     <tr>
+        <th>Studied Math
+            </th><td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+          </td>
+            <td><input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+          </td>
+            <td>
+            <input type="checkbox" id="test15">
+            <label for="test15">yes</label>
+            <input type="checkbox" id="test16">
+            <label for="test16">no</label>
+            </td>
+    
+    </tr>
+    <tr>
+        <th>Read a Book
+             </th><td>
+             <input type="checkbox" id="test15">
+             <label for="test15">yes</label>
+             <input type="checkbox" id="test16">
+             <label for="test16">no</label></td>
+             <td>
+             <input type="checkbox" id="test15">
+             <label for="test15">yes</label>
+             <input type="checkbox" id="test16">
+             <label for="test16">no</label>
+             </td>
+             <td>
+             <input type="checkbox" id="test15">
+             <label for="test15">yes</label>
+             <input type="checkbox" id="test16">
+             <label for="test16">no</label>
+            </td>
+         
+       
+       </tr>
+    </tbody></table>
+  </div></div>
+  <!-- Homepage Main End -->
+  </section>
+
+
+
+
+       <!--Footer
+    ================================================== -->
+
+     <section id="footer">
+      <footer>
+       <p class="copyright">© 2015 G-Landia | Made in St-Petersburg, Russia</p>
+      </div> <!-- Row End -->
+   </footer>
+</section>
+
+    <!-- Footer End -->
   </body>
 </html>
