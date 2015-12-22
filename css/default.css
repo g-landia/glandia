@@ -142,6 +142,7 @@ abbr[title], dfn[title] {
 table {
    border-collapse: collapse;
    border-spacing: 0;
+   background: white;
    border: 1px solid #eee;
    min-width: 630px;
 }
@@ -1042,13 +1043,13 @@ properly.
 
 .titular {
   display: block;
-  line-height: 60px;
+  line-height: 50px;
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   text-align: center;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  /* border-top-left-radius: 5px; */
+  /* border-top-right-radius: 5px; */
 }
 
 
@@ -1736,7 +1737,7 @@ properly.
           }
         .tweet.first {
           height: 150px;
-          border-bottom: 1px solid #1f253d;
+          /* border-bottom: 1px solid #1f253d; */
         }
           .tweet p:first-child {
             margin: 0;
@@ -1913,7 +1914,7 @@ properly.
         background: #3468af;
       }
         .calendar-day .titular {
-          background: #1a4e95;
+          background: #35aadc;
         }
           .calendar-day .arrow-btn:hover {
             background: #16417E;
