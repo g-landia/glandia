@@ -1053,7 +1053,7 @@ properly.
 }
 
 
-.arrow-btn-container {
+.global-goals-container {
   position: relative;
 }
   .arrow-btn {
@@ -1616,11 +1616,16 @@ properly.
             border-color: #e64c65;
           }
         .user-name {
-          margin: 25px 0 16px;
+          margin: 25px 0 0px;
           font-size: 22px;
           text-align: center;
           color: #fff;
         }
+        .country{color:#fff;margin: 0;font-weight: 800;font-size: 16px;}
+        
+         .points{font-size:1em;margin: 0;text-align: center;color: #ccc;}
+        
+        
         .profile-description {
           width: 210px;
           margin: 0 auto;
@@ -1725,29 +1730,29 @@ properly.
             .weather .next-days-temperature .icon {
               padding-left: 10px;
             }
-      .tweets {
-        height: 410px;
+      .offers {
+        height: 400px;
       }
-        .tweets .titular {
+        .offers .titular {
           background: #35aadc;
         }
-          .tweets .titular .icon {
+          .offers .titular .icon {
             font-size: 18px;
             padding-right: 20px;
           }
-        .tweet.first {
+        .offer.first {
           height: 150px;
           /* border-bottom: 1px solid #1f253d; */
         }
-          .tweet p:first-child {
+          .offer p:first-child {
             margin: 0;
             padding: 30px 30px 0;
           }
-          .tweet p:last-child {
+          .offer p:last-child {
             margin: 0;
             padding: 15px 30px 0;
           }
-          .tweet-link {
+          .offer-link {
             color: #4fc4f6;
           }
       .middle-container .social {
@@ -1848,78 +1853,19 @@ properly.
         .account p { 
           text-align: center;
         }
-        .fb-sign-in {
-          margin-top: 28px;
-          display: block;
-          line-height: 50px;
-          background: #3468af;
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
-          -webkit-transition: background .3s;
-          transition: background .3s;
-        }
-          .fb-sign-in:hover {
-            background: #1a4e95;
-            text-decoration: none;
-          }
-        .fb-sign-in .icon { 
-          line-height: 20px;
-          font-size: 12px;
-          padding-right: 3px;
-        }
-          .fb-border {
-            display: inline-block;
-            width: 23px;
-            line-height: 20px;
-            border: 2px solid #fff;
-            border-radius: 100%;
-            margin-right: 10px;
-          }
-      .loading {
-        height: 200px;
-        padding-top: 35px;
-      }
-        .loading p {
-          display: inline-block;
-          padding-left: 30px;
-          margin: 5px 0 20px;
-        }
-          .loading .icon {
-            padding-right: 15px;
-          }
-          .loading .percentage {
-            float: right;
-            padding: 6px 35px 0 0;
-          }
-        .loading .progress-bar {
-          width: 250px;
-          height: 20px;
-          background: #50597b;
-          border-radius: 5px;
-          margin: 0 auto;
-        }
-          .progress-bar.downloading {
-            background: -webkit-linear-gradient(left, #11a8ab 81%,#50597b 81%); /* Chrome10+,Safari5.1+ */
-            background: -ms-linear-gradient(left, #11a8ab 81%,#50597b 81%); /* IE10+ */
-            background: linear-gradient(to right, #11a8ab 81%,#50597b 81%); /* W3C */
-          }
-          .progress-bar.uploading {
-            background: -webkit-linear-gradient(left, #4fc4f6 43%,#50597b 43%); /* Chrome10+,Safari5.1+ */
-            background: -ms-linear-gradient(left, #4fc4f6 43%,#50597b 43%); /* IE10+ */
-            background: linear-gradient(to right, #4fc4f6 43%,#50597b 43%); /* W3C */
-          }
-      .calendar-day {
-        min-height: 410px;
+        
+      .global-goals {
+        min-height: 400px;
         width: 630px;
         background: #3468af;
       }
-        .calendar-day .titular {
+        .global-goals .titular {
           background: #35aadc;
         }
-          .calendar-day .arrow-btn:hover {
+          .global-goals .arrow-btn:hover {
             background: #16417E;
           }
-        .calendar-day .the-day {
+        .global-goals .the-day {
           margin: 0;
           text-align: center;
           font-size: 46px;
@@ -2242,7 +2188,7 @@ properly.
     width: 50%
   }
   .portfolio {
-    height: 100px;
+    height: 80px;
   }
 }
 
@@ -2251,7 +2197,7 @@ properly.
     width: 35%
   }
   .portfolio {
-    height: 200px;
+    height: 100px;
   }
 }
 
@@ -2260,7 +2206,7 @@ properly.
     width: 25%
   }
   .portfolio {
-    height: 250px;
+    height: 75px;
   }
 }
 
@@ -2269,7 +2215,7 @@ properly.
     width: 20%
   }
   .portfolio {
-    height: 400px;
+    height: 150px;
   }
 }
 /* Slide End*/
