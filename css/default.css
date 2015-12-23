@@ -170,7 +170,7 @@ h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
 h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 
-.subheader { }
+.subheader {margin-top: 0px;}
 
 p {margin: 0 0 16px 0;color: #333;font-size: 17px;}
 p img { margin: 0; }
@@ -182,7 +182,7 @@ p.lead {
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
 em { font: 15px/30px 'opensans-italic', sans-serif; }
-strong, b {font: 18px/30px 'opensans-bold', sans-serif;}
+strong, b {font: 14px/30px 'opensans-bold', sans-serif;}
 small { font-size: 11px; line-height: inherit; }
 
 /* Blockquotes */
@@ -1594,13 +1594,14 @@ properly.
   font-size: 14px;
 }
 .accordion a {
+  color: #3a5795;
   width: 100%;
   display: block;
   cursor: pointer;
   font-weight: 600;
   line-height: 2;
   font-size: 14px;
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
   text-indent: 15px;
   user-select: none;
 }
