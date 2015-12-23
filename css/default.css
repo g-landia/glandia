@@ -18,6 +18,7 @@ c. Default Styles
    1. Clearing
    2. Misc
    3. Registration
+   4. FAQ
 
 =====================================================================  */
 
@@ -164,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
 h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
-h3 { font-size: 22px; line-height: 30px; margin-bottom: 15px; }
+h3 {font-size: 20px; line-height: 30px; margin-bottom: 15px;}
 h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
 h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
@@ -1053,7 +1054,7 @@ properly.
       margin: 0 25px;     
     }
       .profile {
-        height: 400px;
+        height: 390px;
       }
         .add-button .icon {
           float: right;
@@ -1278,7 +1279,7 @@ properly.
     {
         background: #3a5795;
         color: white;
-        padding: 18px 20px;
+        padding: 17px 10px;
     }
 
 
@@ -1351,7 +1352,8 @@ properly.
 }
 
 .portfolio_item img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   border: 0;
   outline: 0;
   display: block;
@@ -1573,3 +1575,55 @@ properly.
   }
 }
 /* Slide End*/
+
+
+.accordion {
+  max-width: 560px;
+  margin: 0 auto 100px;
+  /* border-top: 1px solid #d9e5e8; */
+}
+.accordion li {
+  /* border-bottom: 1px solid #d9e5e8; */
+  position: relative;
+}
+.accordion li p {
+  display: none;
+  padding: 0px;
+  text-align: left;
+  color: #666;
+  font-size: 14px;
+}
+.accordion a {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 2;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-indent: 15px;
+  user-select: none;
+}
+.accordion a:after {
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+  position: absolute;
+  right: 10px;
+  content: " ";
+  top: 15px;
+  transform: rotate(45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition:all0.2sease
+  -in-out;
+}
+.accordion p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 2;
+  padding: 10px;
+}
+
+/* <-- FAQ End --> /*
