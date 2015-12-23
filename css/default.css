@@ -182,7 +182,7 @@ p.lead {
 the body tag due to rendering problems in some browsers */
 em { font: 15px/30px 'opensans-italic', sans-serif; }
 strong, b {font: 16px/30px 'opensans-bold', sans-serif;}
-small {font-size: 14px;color: #666;line-height: inherit;}
+small {font-size: 14px;color: #fff;line-height: inherit;}
 
 /* Blockquotes */
 blockquote {
@@ -439,7 +439,7 @@ textarea { min-height: 220px; }
 
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-  content: 'âœ“';
+  content: 'Ã¢Å“â€œ';
   position: absolute;
   top: 3px;
   left: 4px;
