@@ -182,7 +182,7 @@ p.lead {
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
 em { font: 15px/30px 'opensans-italic', sans-serif; }
-strong, b {font: 14px/30px 'opensans-bold', sans-serif;}
+strong, b {font: 16px/30px 'opensans-bold', sans-serif;}
 small { font-size: 11px; line-height: inherit; }
 
 /* Blockquotes */
@@ -565,7 +565,7 @@ textarea { min-height: 220px; }
 
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-  content: '✔';
+  content: 'âœ”';
   position: absolute;
   top: 3px;
   left: 4px;
@@ -1576,6 +1576,8 @@ properly.
 }
 /* Slide End*/
 
+
+/* 4.FAQ ------------------------------------------------ */
 
 .accordion {
   max-width: 560px;
