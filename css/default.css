@@ -28,7 +28,6 @@ c. Default Styles
  ------------------------------------------------------------------ */
 
 @import url("fonts.css");
-@import url("fontello/css/fontello.css");
 @import url("font-awesome/css/font-awesome.min.css");
 
 
@@ -251,7 +250,7 @@ hr { border: solid #E8E8E8; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 a, a:visited {
    text-decoration: none;
    outline: 0;
-   color: #fff;
+   color: #555;
    font-weight: 800;
    -webkit-transition: color .3s ease-in-out;
    -moz-transition: color .3s ease-in-out;
@@ -259,7 +258,7 @@ a, a:visited {
    transition: color .3s ease-in-out;
 }
 
-a:hover, a:focus { color: #fff; }
+a:hover, a:focus { color:  #555; }
 p a, p a:visited { line-height: inherit; }
 
 
@@ -280,132 +279,7 @@ li { line-height: 18px; margin-bottom: 12px; }
 ul.large li { }
 li p { }
 
-/* ---------------------------------------------------------------------
-/*  Stats Tab Markup
 
-    <ul class="stats-tabs">
-      <li><a href="#">[value]<b>[name]</b></a></li>
-    </ul>
-
-    Extend this object into your markup.
-/*
-/* --------------------------------------------------------------------- */
-.stats-tabs {
-   padding: 0;
-   margin: 24px 0;
-}
-.stats-tabs li {
-   display: inline-block;
-   margin: 0 10px 18px 0;
-   padding: 0 10px 0 0;
-   border-right: 1px solid #ccc;
-}
-.stats-tabs li:last-child {
-   margin: 0;
-   padding: 0;
-   border: none;
-}
-.stats-tabs li a {
-   display: inline-block;
-   font-size: 22px;
-   font-family: 'opensans-bold', sans-serif;
-   border: none;
-   color: #313131;
-}
-.stats-tabs li a:hover {
-   color:#11ABB0;
-}
-.stats-tabs li a b {
-   display: block;
-   margin: 6px 0 0 0;
-   font-size: 13px;
-   font-family: 'opensans-regular', sans-serif;
-   color: #8B9798;
-}
-
-/* definition list */
-dl { margin: 12px 0; }
-dt { margin: 0; color:#11ABB0; }
-dd { margin: 0 0 0 20px; }
-
-/* Lining Definition Style Markup */
-.lining dt,
-.lining dd {
-   display: inline;
-   margin: 0;
-}
-.lining dt + dt:before,
-.lining dd + dt:before {
-   content: "\A";
-   white-space: pre;
-}
-.lining dd + dd:before {
-   content: ", ";
-}
-.lining dd:before {
-   content: ": ";
-   margin-left: -0.2em;
-}
-
-/* Dictionary Definition Style Markup */
-.dictionary-style dt {
-   display: inline;
-   counter-reset: definitions;
-}
-.dictionary-style dt + dt:before {
-   content: ", ";
-   margin-left: -0.2em;
-}
-.dictionary-style dd {
-   display: block;
-   counter-increment: definitions;
-}
-.dictionary-style dd:before {
-   content: counter(definitions, decimal) ". ";
-}
-
-/* Pagination */
-.pagination {
-   margin: 36px auto;
-   text-align: center;
-}
-.pagination ul li {
-   display: inline-block;
-   margin: 0;
-   padding: 0;
-}
-.pagination .page-numbers {
-   font: 15px/18px 'opensans-bold', sans-serif;
-   display: inline-block;
-   padding: 6px 10px;
-   margin-right: 3px;
-   margin-bottom: 6px;
-   color: #6E757C;
-   background-color: #E6E8EB;
-
-   -webkit-transition: all 200ms ease-in-out;
-   -moz-transition: all 200ms ease-in-out;
-   -o-transition: all 200ms ease-in-out;
-   -ms-transition: all 200ms ease-in-out;
-   transition: all 200ms ease-in-out;
-
-   border-radius: 3px;
-}
-.pagination .page-numbers:hover {
-   background: #838A91;
-   color: #fff;
-}
-.pagination .current,
-.pagination .current:hover {
-   background-color: #11ABB0;
-   color: #fff;
-}
-.pagination .inactive,
-.pagination .inactive:hover {
-   background-color: #E6E8EB;
-   color: #A9ADB2;
-}
-.pagination .prev, .pagination .next {}
 
 /* 5. Media   --------------------------------------------------------- */
 
@@ -565,7 +439,7 @@ textarea { min-height: 220px; }
 
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-  content: 'âœ”';
+  content: '✓';
   position: absolute;
   top: 3px;
   left: 4px;
