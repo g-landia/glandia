@@ -267,7 +267,7 @@
 
    /* Main Section
    -------------------------------------------------------------------- */
-   #main { padding-top: 42px; }
+   #main {padding-top: 80px;}
    .main-text { width: 96%; }
    .main-text h1 { font: 25px/1.2em 'montserrat-regular', sans-serif; }
    .main-text p { font: 13px/24px 'opensans-regular', sans-serif; } 
