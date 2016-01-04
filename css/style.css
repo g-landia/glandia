@@ -412,9 +412,11 @@ strong, b {
 }
 img {
     max-width: 100%;
+    border-radius: 20em;
     height: auto;
     vertical-align: middle;
     border: 0;
+    margin-bottom: 1em;
     -ms-interpolation-mode: bicubic;
 }
 .modal label.theme_label {
@@ -434,23 +436,6 @@ img {
     margin: .25rem .25rem 0 -.25rem;
     vertical-align: top;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
