@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>G-Landia | Settings</title>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="modal-backdrop fade in" id="task-modal-backdrop" style="display: block;">
+</div>
+
+<div aria-hidden="false" class="modal hide fade in" id="new_prefs_dialog">
+<div class="modal-header"><a class="btn dialog_go btn_small float_right">Save</a>
+<h3>Settings</h3>
+</div>
+
+<div class="modal-body" style="overflow-y: visible;">
+<div class="modal-nav"><a class="active" data-pane-id="account_settings" data-which="notifications"
+id="account_settings_tab">Account</a> <a data-pane-id="personal_settings" data-which="themes" id=
+"personal_settings_tab">Personal Settings</a> <a data-pane-id="interests_settings" data-which=
+"themes" id="interests_settings_tab">Interests</a> <a data-pane-id="goals_settings" data-which=
+"messages" id="goals_settings_tab">Goals</a> <a data-pane-id="motivators_settings" data-which=
+"messages" id="motivators_settings_tab">Motivators</a> <a data-pane-id="funds_settings" data-which=
+"messages" id="funds_settings_tab">Funds</a></div>
+
+<div class="dialog_tab_pane active" id="account_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<div class="growls_stuff hidden" id="growls_permission_div">
+<p class="bold no_bottom_margin"><span class="desktop_notifications_title">Desktop Notifications
+are currently disabled</span>
+</p>
+
+<p class="small_bottom_margin">We strongly recommend enabling them.</p>
+
+<p class="large_bottom_margin"><a class="btn btn_success" id="growls_permission_link" onclick=
+"TS.ui.prefs_dialog.onGrowlsPermissionLinkClick(); return false;"><i class=
+"ts_icon ts_icon_bell_o small_right_margin"></i> Enable desktop notifications</a>
+</p>
+</div>
+
+<div class="growls_stuff hidden" id="growls_instructions_div">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Desktop
+Notifications</span>
+</p>
+
+<p class="alert alert_info"><i class="ts_icon ts_icon_info_circle"></i> Your browser should now be
+presenting you with the option to enable notifications, probably at the top or bottom of this
+window. Click <strong>Enable</strong> or <strong>Allow</strong> or <strong>Yes</strong> or
+<strong>OK</strong> or whatever the right button is!</p>
+</div>
+
+<div class="growls_stuff hidden" id="growls_disallowed_div">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Desktop Notifications
+are currently disabled</span>
+</p>
+
+<p class="moscow_red_dark italic small_bottom_margin">You've disallowed notifications in your
+browser. You'll need to open your browser preferences to change that.</p>
+
+<p class="mini">You can set <a href="/account/notifications" target="_blank">notification
+preferences for email &amp; mobile here</a>.</p>
+</div>
+
+<div class="growls_stuff hidden" id="growls_impossible_div">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Desktop Notifications
+are disabled</span>
+</p>
+
+<p class=""><i class="ts_icon ts_icon_exclamation_triangle"></i> Your browser does not support
+desktop notifications. <a href="/apps" target="_blank">Try one of our apps?</a></p>
+
+<p class="mini">You can set <a href="/account/notifications" target="_blank">notification
+preferences for email &amp; mobile here</a>.</p>
+</div>
+
+<div class="growls_stuff" id="growls_allowed_div">
+</div>
+
+<p class="bold no_bottom_margin top_margin">Basic</p>
+
+<p class="small_bottom_margin">Account information</p>
+
+<p><label>Username:</label><input class="small no_bottom_margin full_width" id=
+"highlight_words_input" placeholder="" type="text" value=""> <label>Email:</label><input class=
+"small no_bottom_margin full_width" id="highlight_words_input" placeholder="" type="text" value=
+""></p>
+
+<p><label>Password:</label><input class="small no_bottom_margin full_width" id=
+"highlight_words_input" placeholder="" type="text" value=""> <label>Confirm:</label><input class=
+"small no_bottom_margin full_width" id="highlight_words_input" placeholder="" type="text" value=
+""></p>
+
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Gender</span>
+</p>
+
+<p class="left_margin tiny_bottom_margin"><label class="radio no_margin"><input class=
+"small_right_margin" name="notifications_rd" type="radio" value="all">Male</label> <label class=
+"radio no_margin"><input class="small_right_margin" name="notifications_rd" type="radio" value=
+"mentions">Female</label></p>
+
+<p class="bold no_bottom_margin">Age</p>
+
+<p><label class="select small no_right_padding" id="new_msg_snd_select_label"><select class=
+"small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">18</option>
+<option value="animal_stick.mp3">19</option>
+<option value="been_tree.mp3">20</option>
+<option value="complete_quest_requirement.mp3">21</option>
+<option value="confirm_delivery.mp3">22</option>
+<option value="flitterbug.mp3">23</option>
+<option value="here_you_go_lighter.mp3">24</option>
+<option value="hi_flowers_hit.mp3">25</option>
+<option value="item_pickup.mp3">26</option>
+<option value="knock_brush.mp3">27</option>
+<option value="save_and_checkout.mp3">28</option>
+<option value="none">29</option></select></label> <label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">January</option>
+<option value="animal_stick.mp3">February</option>
+<option value="been_tree.mp3">March</option>
+<option value="complete_quest_requirement.mp3">April</option>
+<option value="confirm_delivery.mp3">May</option>
+<option value="flitterbug.mp3">June</option>
+<option value="here_you_go_lighter.mp3">July</option>
+<option value="hi_flowers_hit.mp3">August</option>
+<option value="item_pickup.mp3">September</option>
+<option value="knock_brush.mp3">October</option>
+<option value="save_and_checkout.mp3">November</option>
+<option value="none">December</option></select></label> <label class=
+"select small no_right_padding" id="new_msg_snd_select_label"><select class=
+"small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">2016</option>
+<option value="animal_stick.mp3">2015</option>
+<option value="been_tree.mp3">2014</option>
+<option value="complete_quest_requirement.mp3">2013</option>
+<option value="confirm_delivery.mp3">2012</option>
+<option value="flitterbug.mp3">2011</option>
+<option value="here_you_go_lighter.mp3">2010</option>
+<option value="hi_flowers_hit.mp3">2009</option>
+<option value="item_pickup.mp3">2008</option>
+<option value="knock_brush.mp3">2007</option>
+<option value="save_and_checkout.mp3">2006</option>
+<option value="none">2005</option></select></label></p>
+
+<p class="bold no_bottom_margin">Country</p>
+
+<p class="no_bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">Afghanistan</option>
+<option value="animal_stick.mp3">Albania</option>
+<option value="been_tree.mp3">Algeria</option>
+<option value="complete_quest_requirement.mp3">Andorra</option>
+<option value="confirm_delivery.mp3">Angola</option>
+<option value="flitterbug.mp3">Antigua and Barbuda</option>
+<option value="here_you_go_lighter.mp3">Argentina</option>
+<option value="hi_flowers_hit.mp3">Armenia</option>
+<option value="item_pickup.mp3">Aruba</option>
+<option value="knock_brush.mp3">Australia</option>
+<option value="save_and_checkout.mp3">Austria</option>
+<option value="none">Azerbaijan</option></select></label>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dialog_tab_pane" id="personal_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Language</span>
+</p>
+
+<p class="no_bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">Ding</option>
+<option value="animal_stick.mp3">Boing</option>
+<option value="been_tree.mp3">Drop</option>
+<option value="complete_quest_requirement.mp3">Ta-da</option>
+<option value="confirm_delivery.mp3">Plink</option>
+<option value="flitterbug.mp3">Wow</option>
+<option value="here_you_go_lighter.mp3">Here you go</option>
+<option value="hi_flowers_hit.mp3">Hi</option>
+<option value="item_pickup.mp3">Yoink</option>
+<option value="knock_brush.mp3">Knock Brush</option>
+<option value="save_and_checkout.mp3">Woah!</option>
+<option value="none">None (sound off)</option></select></label>
+</p>
+
+<p class="bold no_bottom_margin">Profile Picture</p>
+
+<p class="no_bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">Ding</option>
+<option value="animal_stick.mp3">Boing</option>
+<option value="been_tree.mp3">Drop</option>
+<option value="complete_quest_requirement.mp3">Ta-da</option>
+<option value="confirm_delivery.mp3">Plink</option>
+<option value="flitterbug.mp3">Wow</option>
+<option value="here_you_go_lighter.mp3">Here you go</option>
+<option value="hi_flowers_hit.mp3">Hi</option>
+<option value="item_pickup.mp3">Yoink</option>
+<option value="knock_brush.mp3">Knock Brush</option>
+<option value="save_and_checkout.mp3">Woah!</option>
+<option value="none">None (sound off)</option></select></label>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERESTS -->
+
+<div class="dialog_tab_pane" id="interests_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Interests</span>
+</p>
+
+<p class="bold no_bottom_margin"><span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Acting</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Aeromodeling</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Astronomy</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox"> Animals/pets/dogs</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Arts</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Aquarium (Freshwater & Saltwater)</label></span> <span class=
+"normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Astrology</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Badminton</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Baseball</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Base Jumping</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Basketball</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Beach/Sun tanning</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Belly Dancing</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">Bicycling</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="checked" id="mute_sounds_cb"
+type="checkbox">BMX</label></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dialog_tab_pane" id="goals_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Goals
+Frequency</span>
+</p>
+
+<p class="left_margin tiny_bottom_margin"><label class="radio no_margin"><input class=
+"small_right_margin" name="notifications_rd" type="radio" value="all"> 1x per week</label>
+<label class="radio no_margin"><input class="small_right_margin" name="notifications_rd" type=
+"radio" value="mentions"> 3x per week</label> <label class="radio no_margin"><input class=
+"small_right_margin" name="notifications_rd" type="radio" value="never"> Everyday</label></p>
+
+<p class="mini small_bottom_margin" id="no_non_default">You can choose how many times per week will
+you focus on achieving your goals. The more time you can use doing good deeds, the more G-Points
+you collect.</p>
+
+<p class="non_default hidden mini small_bottom_margin">Some of your channels or groups have
+<strong class="cursor_pointer" data-original-title="" id="non_default_tip_link" title="">different
+notification settings</strong>. Or, <a href="/account/notifications" target="new_1440175334960">set
+notification preferences for email &amp; mobile</a>.</p>
+
+<p class="bold no_bottom_margin">Profile Picture</p>
+
+<p class="no_bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">Ding</option>
+<option value="animal_stick.mp3">Boing</option>
+<option value="been_tree.mp3">Drop</option>
+<option value="complete_quest_requirement.mp3">Ta-da</option>
+<option value="confirm_delivery.mp3">Plink</option>
+<option value="flitterbug.mp3">Wow</option>
+<option value="here_you_go_lighter.mp3">Here you go</option>
+<option value="hi_flowers_hit.mp3">Hi</option>
+<option value="item_pickup.mp3">Yoink</option>
+<option value="knock_brush.mp3">Knock Brush</option>
+<option value="save_and_checkout.mp3">Woah!</option>
+<option value="none">None (sound off)</option></select></label>
+</p>
+
+<div class="clear_both hidden" id="goals_settings">
+<p class="bold clear_both small_bottom_margin">Custom Theme</p>
+
+<div class="input-prepend"><span class="add-on color_swatch" data-hex="#303E4D" data-theme-element=
+"column_bg" style="background-color: #303E4D;"></span> <input class="small color_hex monospace"
+maxlength="7" name="color_column_bg_hex" type="text" value="#303E4D"><br>
+<span class="input_note">Column BG</span></div>
+
+<div class="input-prepend"><span class="add-on color_swatch" data-hex="#2C3849" data-theme-element=
+"menu_bg" style="background-color: #2C3849;"></span> <input class="small color_hex monospace"
+maxlength="7" name="color_menu_bg_hex" type="text" value="#2C3849"><br>
+<span class="input_note">Menu BG Hover</span></div>
+
+<div class="input-prepend"><span class="add-on color_swatch" data-hex="#6698C8" data-theme-element=
+"active_item" style="background-color: #6698C8;"></span> <input class="small color_hex monospace"
+maxlength="7" name="color_active_item_hex" type="text" value="#6698C8"><br>
+<span class="input_note">Active Item</span></div>
+
+<div class="input-prepend"><span class="add-on color_swatch" data-hex="#FFFFFF" data-theme-element=
+"active_item_text" style="background-color: #FFFFFF;"></span> <input class=
+"small color_hex monospace" maxlength="7" name="color_active_item_text_hex" type="text" value=
+"#FFFFFF"><br>
+<span class="input_note">Active Item Text</span></div>
+
+<div class="input-prepend"><span class="add-on color_swatch" data-hex="#4A5664" data-theme-element=
+"hover_item" style="background-color: #4A5664;"></span> <input class="small color_hex monospace"
+maxlength="7" name="color_hover_item_hex" type="text" value="#4A5664"><br>
+<span class="input_note">Hover Item</span></div>
+
+<div class="input-prepend"><span class="add-on color_swatch" data-hex="#FFFFFF" data-theme-element=
+"text_color" style="background-color: #FFFFFF;"></span> <input class="small color_hex monospace"
+maxlength="7" name="color_text_color_hex" type="text" value="#FFFFFF"><br>
+<span class="input_note">Text Color</span></div>
+
+<div class="input-prepend"><span class="add-on color_swatch" data-hex="#94E864" data-theme-element=
+"active_presence" style="background-color: #94E864;"></span> <input class=
+"small color_hex monospace" maxlength="7" name="color_active_presence_hex" type="text" value=
+"#94E864"><br>
+<span class="input_note">Active Presence</span></div>
+
+<div class="input-prepend"><span class="add-on color_swatch" data-hex="#78AF8F" data-theme-element=
+"badge" style="background-color: #78AF8F;"></span> <input class="small color_hex monospace"
+maxlength="7" name="color_badge_hex" type="text" value="#78AF8F"><br>
+<span class="input_note">Mention Badge</span></div>
+<input class="monospace subtle_silver top_margin" id="sidebar_theme_custom" name=
+"sidebar_theme_custom" type="text">
+<p class="input_note no_bottom_margin">Copy and paste these values to share your custom theme with
+others.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dialog_tab_pane" id="funds_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold no_bottom_margin top_margin">Funds</p>
+
+<p class="small_bottom_margin">Choose the funds that are more caring to you:</p>
+<p></p>
+<p class="bold no_bottom_margin top_margin">Highlight Words</p>
+
+<p class="small_bottom_margin">To be notified when someone mentions a word or phrase, add it here.
+You can separate words or phrases with commas. Highlight Words are not case sensitive.</p>
+
+<p><input class="small no_bottom_margin full_width" id="highlight_words_input" placeholder=
+"Your screen name &quot;jasondavis&quot; is automatically a Highlight Word" type="text" value="">
+</p>
+
+<p class="bold no_bottom_margin"><span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input checked="unchecked" id=
+"mute_sounds_cb" type="checkbox"> Choose all</label></span>
+</p>
+
+<p class="left_margin tiny_bottom_margin"><label class="radio no_margin"><input class=
+"small_right_margin" name="notifications_rd" type="radio" value="never"> Choose all</label>
+</p>
+
+<p class="mini small_bottom_margin" id="no_non_default">You can choose how many times per week will
+you focus on achieving your goals. The more time you can use doing good deeds, the more G-Points
+you collect.</p>
+
+<p class="non_default hidden mini small_bottom_margin">Some of your channels or groups have
+<strong class="cursor_pointer" data-original-title="" id="non_default_tip_link" title="">different
+notification settings</strong>. Or, <a href="/account/notifications" target="new_1440175334960">set
+notification preferences for email &amp; mobile</a>.</p>
+
+<p class="bold no_bottom_margin">Notification Sound</p>
+
+<p class="no_bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">Ding</option>
+<option value="animal_stick.mp3">Boing</option>
+<option value="been_tree.mp3">Drop</option>
+<option value="complete_quest_requirement.mp3">Ta-da</option>
+<option value="confirm_delivery.mp3">Plink</option>
+<option value="flitterbug.mp3">Wow</option>
+<option value="here_you_go_lighter.mp3">Here you go</option>
+<option value="hi_flowers_hit.mp3">Hi</option>
+<option value="item_pickup.mp3">Yoink</option>
+<option value="knock_brush.mp3">Knock Brush</option>
+<option value="save_and_checkout.mp3">Woah!</option>
+<option value="none">None (sound off)</option></select></label>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dialog_tab_pane" id="motivators_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Motivators</span>
+</p>
+
+<p class="left_margin tiny_bottom_margin"><label class="radio no_margin"><input class=
+"small_right_margin" name="notifications_rd" type="radio" value="all"> 1x per week</label>
+<label class="radio no_margin"><input class="small_right_margin" name="notifications_rd" type=
+"radio" value="mentions"> 3x per week</label> <label class="radio no_margin"><input class=
+"small_right_margin" name="notifications_rd" type="radio" value="never"> Everyday</label></p>
+
+<p class="mini small_bottom_margin" id="no_non_default">You can choose how many times per week will
+you focus on achieving your goals. The more time you can use doing good deeds, the more G-Points
+you collect.</p>
+
+<p class="non_default hidden mini small_bottom_margin">Some of your channels or groups have
+<strong class="cursor_pointer" data-original-title="" id="non_default_tip_link" title="">different
+notification settings</strong>. Or, <a href="/account/notifications" target="new_1440175334960">set
+notification preferences for email &amp; mobile</a>.</p>
+
+<p class="bold no_bottom_margin">Notification Sound</p>
+
+<p class="no_bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">Ding</option>
+<option value="animal_stick.mp3">Boing</option>
+<option value="been_tree.mp3">Drop</option>
+<option value="complete_quest_requirement.mp3">Ta-da</option>
+<option value="confirm_delivery.mp3">Plink</option>
+<option value="flitterbug.mp3">Wow</option>
+<option value="here_you_go_lighter.mp3">Here you go</option>
+<option value="hi_flowers_hit.mp3">Hi</option>
+<option value="item_pickup.mp3">Yoink</option>
+<option value="knock_brush.mp3">Knock Brush</option>
+<option value="save_and_checkout.mp3">Woah!</option>
+<option value="none">None (sound off)</option></select></label>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+<script src="js/index.js"></script>
+</body>
+</html>
