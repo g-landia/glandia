@@ -21,3 +21,19 @@
     });
 })(jQuery);
 
+$( document ).ready(function() {
+  
+  var settingsTab = '.modal-nav a';
+  var settingsPane = '.dialog_tab_pane';
+
+  $(settingsTab).on('click', function(){
+      $(settingsPane).removeClass('active');
+      $(settingsTab).removeClass('active');
+    
+      var settingsPaneId = $(this).data('pane-id');
+      $('#'+settingsPaneId).addClass('active');
+      
+      $(this).addClass('active');
+  });
+});
+
