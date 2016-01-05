@@ -21,12 +21,12 @@
 /* ------------------------------------------------------------------ */
 
 .section-head {
-   padding: 0 4%;
+   padding: 0%;
    text-align: center;
 }
 .section-head h1 {
    font: 20px/36px 'montserrat-bold', sans-serif;
-   color: #ecf0f1;
+   color: #888;
    text-transform: uppercase;
    letter-spacing: 1.5px;
    margin-bottom: 12px;
@@ -124,6 +124,76 @@ header .button-login {
    text-decoration:none;
    transition:background .3s;
    -webkit-transition:background .3s;
+}
+
+/*----------------------------------------------*/
+/* e. Pricing Section
+/*----------------------------------------------*/
+
+#pricing {
+   background: #F7F7F7;
+   padding-top: 107px;
+   padding-bottom: 77px;   
+   border-top: 1px solid #F0F0F0;
+   border-bottom: 1px solid #F0F0F0;
+   text-align: center;
+}
+#pricing .price-block {
+   background: #fff;
+   border: 1px solid #E6E6E6;
+   text-align: center;
+   margin-bottom: 36px;
+}
+.plan-title {
+   font: 15px/30px 'montserrat-regular', sans-serif;
+   padding: 30px 20px 6px 20px;
+   margin-bottom: 0px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+.plan-title .fa {
+   display: block;
+   margin-bottom: 6px;
+   font-size: 26px;
+}
+.plan-price {
+   font-family: 'montserrat-bold', sans-serif;
+   font-size: 30px;
+   color: #333;
+   padding: 6px 30px 6px 30px;
+   margin-bottom: 0;
+   text-align: center;
+   letter-spacing: .5px;
+}
+.plan-price span {
+   font-family: 'opensans-light', sans-serif;
+   font-size: 15px;
+   color: #999;   
+   display: block;
+   margin-top: 0;
+}
+
+ul.features {
+   margin: 12px 0 0 0;
+   list-style: none;
+}
+ul.features li {
+   line-height: 39px;
+   margin-bottom: 0;
+}
+ul.features li:nth-child(odd) { }
+ul.features li:nth-child(even) { }
+
+.plan-sign-up {
+   padding: 24px 15px;
+   margin: 0;
+   text-align: center;
+}
+.plan-sign-up .button {
+   font: 13px/24px 'montserrat-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
 }
 
 /* primary navigation
