@@ -1,34 +1,13 @@
-/*
-=====================================================================
-*   G-Landia Stylesheet
-*   17-12-2015
-=====================================================================
-
-   a. General and Common Styles
-   b. Header Styles
-   c. Main Section
-   d. About G-Landia Section
-   e. Support Section
-   f. Inspiration Section
-   g. Join Us Section
-   h. Footer
-   i. lightbox
-
-===================================================================== */
-
-/* ------------------------------------------------------------------ */
-/* a. General and Common Styles
-/* ------------------------------------------------------------------ */
 
 .section-head {
-   padding: 0%;
+   padding: 0;
    text-align: center;
 }
 .section-head h1 {
    font: 20px/36px 'montserrat-bold', sans-serif;
    color: #888;
    text-transform: uppercase;
-   letter-spacing: 1.5px;
+   letter-spacing: 2px;
    margin-bottom: 12px;
 }
 
@@ -50,8 +29,7 @@ header {
    background: -moz-linear-gradient(top, #1e5799 0%, #207cca 40%, #207cca 40%, #2989d8 50%, #7db9e8 100%);/* FF3.6-15 */
    /* background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 40%,#207cca 40%,#2989d8 50%,#7db9e8 100%); *//* Chrome10-25,Safari5.1-6 */
    /* background: linear-gradient(to bottom, #1e5799 0%,#207cca 40%,#207cca 40%,#2989d8 50%,#7db9e8 100%); *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );/* IE6-9 */
-   copy;
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );/* IE6-9 */;
    background-repeat: repeat-x;
    position: fixed;
    left: 0;
@@ -106,9 +84,7 @@ header .button-login {
    font: 12px/12px 'montserrat-bold', sans-serif;
    background: none;
    color: #fff;
-   display: inline-block;
    text-decoration: none;
-   letter-spacing: 0;
    padding: 12px 18px;
    border: 1px solid #fff;
    cursor: pointer;
@@ -117,11 +93,8 @@ header .button-login {
    letter-spacing: 2px;
    width:100px;
    display:block;
-   margin:0 auto;
-   margin-top: 10px;
-   /* padding:10px; */
+   margin: 10px auto 0;
    text-align:center;
-   text-decoration:none;
    transition:background .3s;
    -webkit-transition:background .3s;
 }
@@ -147,7 +120,7 @@ header .button-login {
 .plan-title {
    font: 15px/30px 'montserrat-regular', sans-serif;
    padding: 30px 20px 6px 20px;
-   margin-bottom: 0px;
+   margin-bottom: 0;
    text-align: center;
    text-transform: uppercase;
    letter-spacing: 2px;
@@ -164,7 +137,7 @@ header .button-login {
    padding: 6px 30px 6px 30px;
    margin-bottom: 0;
    text-align: center;
-   letter-spacing: .5px;
+   letter-spacing: 2px;
 }
 .plan-price span {
    font-family: 'opensans-light', sans-serif;
@@ -210,7 +183,7 @@ ul.features li:nth-child(even) { }
 #nav-wrap {
    font: 11px 'montserrat-regular', sans-serif;
    text-transform: uppercase;
-   letter-spacing: 1.5px;
+   letter-spacing: 2px;
    float: left;
 }
 
@@ -239,16 +212,15 @@ display: inline-block;
 padding: 12px 8px;
 line-height: 38px;
 text-decoration: none;
-text-align: left;color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;
+text-align: left;color: #E8EFF7;     text-shadow: 0 1px 0 #4e7097;
 -webkit-transition: color .2s ease-in-out;
 -moz-transition: color .2s ease-in-out;
 -o-transition: color .2s ease-in-out;
--ms-transition: color .2s ease-in-out;
 transition: color .2s ease-in-out;}
 
 ul#nav li a:hover {color: #fff;}
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
+ul#nav li.current a {color: #E8EFF7;     text-shadow: 0 1px 0 #4e7097;}
 
 /* ------------------------------------------------------------------ */
 /* c. Main Section
@@ -287,7 +259,7 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
    color: #527bbc;
    padding: 0;
    margin: 0;
-   text-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+   text-shadow: 0 1px 4px rgba(0, 0, 0, .2);
 }
 
 .main-text h1 span,
@@ -328,10 +300,9 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
    border: 1px solid #3a5795;
    color: #3a5795;
    margin-right: 30px;
-   -webkit-animation-delay: 10s;
-   -moz-animation-delay: 10s;
-   -ms-animation-delay: 10s;
-   -o-animation-delay: 10s;
+   -webkit-animation-delay: 5s;
+   -moz-animation-delay: 5s;
+   -o-animation-delay: 5s;
    -webkit-animation-iteration-count: 3;
    -moz-animation-iteration-count: 3;
 }
@@ -396,8 +367,6 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
 
 #call-to-action h1 span { display: none; }
 #call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
-   /* content: "\f093"; */
    padding-right: 18px;
    padding-top: 6px;
    font-size: 72px;
@@ -487,7 +456,7 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0px 1px 0px #4e7097;}
 
 /* Blockquotes */
 #inspiration blockquote {
-   margin: 0 0px 30px 0px;
+   margin: 0 0 30px 0;
    padding-left: 0;
    position: relative;   
 }
@@ -756,7 +725,6 @@ footer .copyright {
    cursor: pointer;
    position: fixed;
    z-index: 995;
-   -ms-touch-action: none;
    touch-action: none;
    -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .3 ); /* 50 */
    -moz-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .3 ); /* 50 */
