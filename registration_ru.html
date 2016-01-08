@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<html class="no-js" lang="en"> 
+<head>
+<meta charset="utf-8">
+<title>G-Landia | Настройки</title>
+<meta name="description" content="">  
+<meta name="author" content="inkyotogrand">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="favicon.ico" >
+</head>
+<body>
+<div class="modal-backdrop fade in" id="task-modal-backdrop" style="display: block;">
+</div>
+<div aria-hidden="false" class="modal hide fade in" id="new_prefs_dialog">
+<div class="modal-header"><a class="btn dialog_go btn_small float_right">Сохранить</a>
+<h3>Настройки</h3>
+</div>
+<div class="modal-body" style="overflow-y: visible;">
+<div class="modal-nav"><a class="active" data-pane-id="account_settings" data-which="notifications"
+id="account_settings_tab">О Вас</a> <a data-pane-id="personal_settings" data-which="themes" id=
+"personal_settings_tab">Персональные настройки</a> <a data-pane-id="interests_settings" data-which=
+"themes" id="interests_settings_tab">Ваши интересы</a> <a data-pane-id="goals_settings" data-which=
+"messages" id="goals_settings_tab">Ваши цели 2016</a> <a data-pane-id="motivators_settings" data-which=
+"messages" id="motivators_settings_tab">Ваши мотиваторы</a> <a data-pane-id="funds_settings" data-which=
+"messages" id="funds_settings_tab">Фонды</a></div>
+<div class="dialog_tab_pane active" id="account_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<div class="growls_stuff" id="growls_allowed_div">
+</div>
+<p class="bold bottom_margin top_margin">Коротко о Вас</p>
+<p><input class="small no_bottom_margin full_width" id=
+"highlight_words_input" placeholder="Имя" type="text" value=""><input class=
+"small no_bottom_margin full_width" id="highlight_words_input" placeholder="E-mail" type="text" value=
+""></p>
+<p><input class="small no_bottom_margin full_width" id=
+"highlight_words_input" placeholder="Пароль" type="text" value=""><input class=
+"small no_bottom_margin full_width" id="highlight_words_input" placeholder="Повторите пароль" type="text" value=
+""></p>
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Ваш пол</span>
+</p>
+<p class="left_margin tiny_bottom_margin"><label class="radio no_margin"><input class=
+"small_right_margin" name="notifications_rd" type="radio" value="all">Мужской</label> <label class=
+"radio no_margin"><input class="small_right_margin" name="notifications_rd" type="radio" value=
+"mentions">Женский</label></p>
+<p class="bold small_bottom_margin">Возраст</p>
+<p><label class="select small no_right_padding" id="new_msg_snd_select_label"><select class=
+"small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">18</option>
+<option value="animal_stick.mp3">19</option>
+<option value="been_tree.mp3">20</option>
+<option value="complete_quest_requirement.mp3">21</option>
+<option value="confirm_delivery.mp3">22</option>
+<option value="flitterbug.mp3">23</option>
+<option value="here_you_go_lighter.mp3">24</option>
+<option value="hi_flowers_hit.mp3">25</option>
+<option value="item_pickup.mp3">26</option>
+<option value="knock_brush.mp3">27</option>
+<option value="save_and_checkout.mp3">28</option>
+<option value="none">29</option></select></label> <label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">January</option>
+<option value="animal_stick.mp3">February</option>
+<option value="been_tree.mp3">March</option>
+<option value="complete_quest_requirement.mp3">April</option>
+<option value="confirm_delivery.mp3">May</option>
+<option value="flitterbug.mp3">June</option>
+<option value="here_you_go_lighter.mp3">July</option>
+<option value="hi_flowers_hit.mp3">August</option>
+<option value="item_pickup.mp3">September</option>
+<option value="knock_brush.mp3">October</option>
+<option value="save_and_checkout.mp3">November</option>
+<option value="none">December</option></select></label> <label class=
+"select small no_right_padding" id="new_msg_snd_select_label"><select class=
+"small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">2016</option>
+<option value="animal_stick.mp3">2015</option>
+<option value="been_tree.mp3">2014</option>
+<option value="complete_quest_requirement.mp3">2013</option>
+<option value="confirm_delivery.mp3">2012</option>
+<option value="flitterbug.mp3">2011</option>
+<option value="here_you_go_lighter.mp3">2010</option>
+<option value="hi_flowers_hit.mp3">2009</option>
+<option value="item_pickup.mp3">2008</option>
+<option value="knock_brush.mp3">2007</option>
+<option value="save_and_checkout.mp3">2006</option>
+<option value="none">2005</option></select></label></p>
+<p class="bold small_bottom_margin">Страна</p>
+<p class="no_bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">Russia</option>
+
+<option value="b2.mp3">Afghanistan</option>
+<option value="animal_stick.mp3">Albania</option>
+<option value="been_tree.mp3">Algeria</option>
+<option value="complete_quest_requirement.mp3">Andorra</option>
+<option value="confirm_delivery.mp3">Angola</option>
+<option value="flitterbug.mp3">Antigua and Barbuda</option>
+<option value="here_you_go_lighter.mp3">Argentina</option>
+<option value="hi_flowers_hit.mp3">Armenia</option>
+<option value="item_pickup.mp3">Aruba</option>
+<option value="knock_brush.mp3">Australia</option>
+<option value="save_and_checkout.mp3">Austria</option>
+<option value="none">Azerbaijan</option></select></label>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="dialog_tab_pane" id="personal_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Язык</span>
+</p>
+<p class="bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="animal_stick.mp3">Русский</option>
+<option value="b2.mp3">English</option>
+<option value="been_tree.mp3">Português</option>
+<option value="complete_quest_requirement.mp3">Español</option>
+</select></label>
+</p>
+<p class="bold bottom_margin">Фото</p>
+<div class="wrapper">
+<div class="file-upload">
+<img id="img-uploaded" src="http://placehold.it/150x150" alt="your image" />
+</div>
+<input type="file" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERESTS -->
+<div class="dialog_tab_pane" id="interests_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Ваши интересы</span>
+</p>
+<p class="mini bottom_margin" id="no_non_default">Мы рекомендуем Вам указать или выбрать сколько угодно увлечений и интересов, чтобы мотиваторам было легче Вас удивлять и помогать побеждать.</p>
+<p class="bold no_bottom_margin">
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Acting</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Aeromodeling</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Astronomy</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox"> Animals/pets/dogs</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Arts</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Aquarium (Freshwater & Saltwater)</label></span> <span class=
+"normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Astrology</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Badminton</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Baseball</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Base Jumping</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Basketball</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Beach/Sun tanning</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Belly Dancing</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Bicycling</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">BMX</label></span>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Blogging</label></span>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">BMX</label></span>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Board Games</label></span>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Boating</label></span>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Body Building </label></span>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Bowling</label></span></p>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Camping</label></span></p>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Candle Making</label></span></p>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Canoeing</label></span></p>
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Bowling</label></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="dialog_tab_pane" id="goals_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin">Выбор Цели</p>
+<p class="mini bottom_margin" id="no_non_default">Пожалуйста, укажите те МЕЧТЫ / ЦЕЛИ, которые Вы сами себе больше всего желаете. Вы так же всегда можете воспользоваться списком самых популярных целей на 2016 год.</p>
+<p class="bold no_bottom_margin">
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">More LOVE</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">More water</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">More healthy food</label></span> 
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">More Work Out</label></span> 
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">More sincerity / honesty</label></span> 
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">More sharing and caring</label></span> 
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">More laughing</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">More positive talks</label></span> <span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">More punctuality</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">More responsibility</label></span> 
+<span class="normal left_margin"><label class=
+"checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">30 min for hobbies</label></span> 
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">20 min for social projects</label></span> 
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">20 minutes for walking / jogging</label></span> 
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">5 minutes for dreaming</label></span> 
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">5 minutes for planning tomorrow</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">5 minutes for meditating</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"type="checkbox">5 minutes for planning tomorrow</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">Minimum 24 seconds for hugging</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">Get up early</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Contrast showers</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">Less smoking</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">Less drinking</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">No drugs</label></span>
+<span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb"
+type="checkbox">More proactive less passive</label></span>
+<span class="normal left_margin"><label class= "checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">More FAITH</label></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="dialog_tab_pane" id="funds_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin top_margin">Пожалуйста выберете фонды</p>
+<p class="mini_bottom_margin">В данный момент мы выбрали 3 Всемирные, независимые организации помогающие детям, людям, животному миру и окружающей среде.</br>Давайте объединимся вокруг общих целей и ценностей и уже очень скоро, наши дети скажут нам спасибо!</p>
+<p class="bold small_bottom_margin"><span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">Спасём детей 
+(Все виды помощь детям в более чем 100 странах) </label></span>
+</p>
+<p class="bold small_bottom_margin"><span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">Фонд помощи дикой природе (защита и помощь животным и окружающей среде)</label></span>
+</p>
+<p class="bold bottom_margin"><span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox">Джиландия (Все виды социальной помощи, профилактика опасных привычек и болезней, зелёные технологии, современное образование, миротворческая деятельность)</label></span>
+</p>
+<p class="bold no_bottom_margin"><span class="normal left_margin"><label class="checkbox normal inline_block auto_width no_min_width"><input id="mute_sounds_cb" type="checkbox"> Выберете все</label></span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="dialog_tab_pane" id="motivators_settings">
+<div class="monkey_scroll_wrapper" id="">
+<div class="monkey_scroll_bar hidden" style="margin-left: 606.5px;">
+<div class="monkey_scroll_handle" style="left: 0px;">
+<div class="monkey_scroll_handle_inner">
+</div>
+</div>
+</div>
+<div class="monkey_scroll_hider" style="width: 100%;">
+<div class="dialog_tab_pane_scroller monkey_scroller" style="width: 620px;">
+<p class="bold small_bottom_margin"><span class="desktop_notifications_title">Выбор Мотиваторов</span>
+</p>
+<p class="bottom_margin" id="no_non_default">Дорогие Друзья!</p>
+<p>Наш проект только запустился и мы временно просим Вас выбирать «Всех потенциальных мотиваторов» в качестве своих помощников, чтобы мы могли адресовать как можно больше заявок к максимальному количеству организаций, корпораций, звёзд, знаменитостей и прочим.</br>
+</br>Так же, просим Вас написать названия любых любимых компаний и знаменитостей, кого бы Вы сами хотели пригласить в качестве мотиваторов. (Например Анжелина Джоли,  Джони Деп, Том Круз, Мерседес-Бенц, БМВ, Газпром и тд.)
+ </p>
+<p class="bold small_bottom_margin">Знаменитости</p>
+<p class="bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="">Johnny Depp</option>
+<option value="animal_stick.mp3">Boing</option>
+<option value="been_tree.mp3">Drop</option>
+<option value="complete_quest_requirement.mp3">Ta-da</option>
+<option value="confirm_delivery.mp3">Plink</option>
+<option value="flitterbug.mp3">Wow</option>
+<option value="here_you_go_lighter.mp3">Here you go</option>
+<option value="hi_flowers_hit.mp3">Hi</option>
+<option value="item_pickup.mp3">Yoink</option>
+<option value="knock_brush.mp3">Knock Brush</option>
+<option value="save_and_checkout.mp3">Woah!</option>
+<option value="none">None (sound off)</option></select></label>
+</p>
+<p><label>Пригласите Ваших любимых знаменитостей:</label><input class="small no_bottom_margin full_width" id=
+"highlight_words_input" placeholder="Eх: Putin" type="text" value=""></p>
+<p class="bold small_bottom_margin">Организации</p>
+<p class="no_bottom_margin"><label class="select small no_right_padding" id=
+"new_msg_snd_select_label"><select class="small no_bottom_margin" id="new_msg_snd_select">
+<option value="b2.mp3">Nike</option>
+<option value="animal_stick.mp3">Boing</option>
+<option value="been_tree.mp3">Drop</option>
+<option value="complete_quest_requirement.mp3">Ta-da</option>
+<option value="confirm_delivery.mp3">Plink</option>
+<option value="flitterbug.mp3">Wow</option>
+<option value="here_you_go_lighter.mp3">Here you go</option>
+<option value="hi_flowers_hit.mp3">Hi</option>
+<option value="item_pickup.mp3">Yoink</option>
+<option value="knock_brush.mp3">Knock Brush</option>
+<option value="save_and_checkout.mp3">Woah!</option>
+<option value="none">None (sound off)</option></select></label>
+</p>
+<p><label>Пригласите Ваши любимые организации:</label><input class="small no_bottom_margin full_width" id=
+"highlight_words_input" placeholder="Eх: Adidas" type="text" value=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+<script src="js/index.js"></script>
+</body>
+</html>
