@@ -41,7 +41,7 @@
    <header>
 
       <div class="logo">
-         <a class="smoothscroll" href="#hero"><img alt="" src="images/logo.png"></a>
+         <a class="smoothscroll" href="#main"><img alt="" src="images/logo.png"></a>
       </div>
 
       <nav id="nav-wrap">         
@@ -50,8 +50,8 @@
          <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>         
 
          <ul id="nav" class="nav">
-            <li><a class="smoothscroll" href="#features">About G-Landia</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Why Join?</a></li>
+            <li><a class="smoothscroll" href="#about">About G-Landia</a></li>
+            <li><a class="smoothscroll" href="#inspiration">Why Join?</a></li>
             <li><a href="faq.html">F.A.Q</a></li>
             <li><a class="smoothscroll" href="#subscribe">Join Us</a></li>
          </ul> <!-- end #nav -->
@@ -59,22 +59,41 @@
       </nav> <!-- end #nav-wrap -->
 
       <ul class="header-social">
-         <li><a href="#">Language <i class="fa fa-chevron-down"></i></a></li>
-         <li><a href="#">Login</a></li>
+<li>
+<div>
+
+<div id="lang-form">
+<div id="language-selected" class="dropdownbox">Language <i class="fa fa-chevron-down"></i>
+</div>
+  <div id="dropdown-wrapper">
+    <ul name="lang" id="select-language-menu" class="menu">
+        <li class="selected">
+          English
+          <div class="lang-code" style="display: none;">English <i class="fa fa-chevron-down"></i></div>
+        </li>
+        <li>
+          Russian</i>
+          <div class="lang-code" style="display: none;">Russian <i class="fa fa-chevron-down"></i></div>
+        </li>
+    </ul>
+  </div>
+</div>
+</div>
+</li>
       </ul>
 
    </header> <!-- Header End -->
 
 
-   <!-- Homepage Hero
+   <!-- Homepage Main
    ================================================== -->
-   <section id="hero">
+   <section id="main">
 
       <div class="row">
 
          <div class="twelve columns">
 
-            <div class="hero-text">
+            <div class="main-text">
                <h1 class="responsive-headline">Welcome to the Land of Good!</h1>
 
                <p>G-Landia is a global community of people, businesses, celebrities and many others willing to improve in all spheres and share care with each other.</p>
@@ -83,23 +102,23 @@
 
             <div class="buttons">
                <a class="button trial" href="#subscribe">Join Today</a>
-               <a class="button learn-more smoothscroll" href="#features">Learn More</a>
+               <a class="button learn-more smoothscroll" href="#about">Learn More</a>
             </div>
 
-            <div class="hero-image">
-               <img src="images/hero-image.png" alt="" />
+            <div class="main-image">
+               <img src="images/land-image.png" alt="" />
             </div>
 
          </div>
 
       </div>
 
-   </section> <!-- Homepage Hero end -->
+   </section> <!-- Homepage Main end -->
 
 
-   <!-- Features Section
+   <!-- About Section
    ================================================== -->
-   <section id='features'>
+   <section id='about'>
 
       <div class="row feature design">
 
@@ -179,12 +198,12 @@
 
       </div>
 
-   </section> <!-- Homepage Hero end -->
+   </section> <!-- Homepage Main end -->
 
 
-   <!-- Testimonials Section
+   <!-- Inspiration Section
    ================================================== -->
-   <section id="testimonials">
+   <section id="inspiration">
 
       <div class="row content">
 
@@ -230,7 +249,7 @@
 
       </div> <!-- row ends -->
 
-   </section> <!-- Testimonials Section End-->
+   </section> <!-- Inspiration Section End-->
 
 
    <!-- Subscribe
@@ -244,7 +263,7 @@
             <h1>WELCOME TO G-OLYMPICS!</h1>
 
             <p>You are just one step away from your new world!</br>
-               By joining, you confirm you have read and accepted our Terms & Conditions.</p>
+               By joining, you confirm you have read and accepted our <a href="terms.html">Terms & Conditions</a>.</p>
 
          </div>
 

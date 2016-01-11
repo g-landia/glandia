@@ -17,11 +17,36 @@
     	// will fade out the whole DIV that covers the website. 
     	$("#preloader").delay(500).fadeOut("slow").remove();     
       
-    	$('.js #hero .hero-image img').addClass("animated fadeInUpBig"); 
-      $('.js #hero .buttons a.trial').addClass("animated shake");    
+    	$('.js #main .main-image img').addClass("animated fadeInUpBig"); 
+      $('.js #main .buttons a.trial').addClass("animated shake");    
 
   	}) 
 
+   if ($('#language-selected').is(':empty')){
+    $( ".menu li" ).each(function() {
+      if($(this).attr('class') == 'selected'){
+        var selected = $(this).find('.lang-code').html().toUpperCase();
+          console.log($(this).find('.lang-code').html().toUpperCase());
+          $("#language-selected").html(selected);
+      }
+    });
+  }
+
+  //The next following line displays and set selected language
+    $(".dropdownbox").click(function(){
+    $(".menu").toggleClass("showMenu");
+      $(".menu > li").click(function(){
+        var selected = $(this).find('.lang-code').html().toUpperCase();
+        console.log($(this).find('.lang-code').html().toUpperCase());
+        $("#language-selected").html(selected);
+        $(".menu").removeClass("showMenu");         
+        });
+    });
+  
+    //Close language select box if nothing is selected
+    $("#dropdown-wrapper").mouseleave(function(){
+      $(".menu").removeClass("showMenu");
+    });
 
   	/*---------------------------------------------------- */
   	/* Mobile Menu
