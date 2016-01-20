@@ -56,7 +56,7 @@ header .logo a {
     padding: 0;
     border: none;
     outline: none;
-    width: 90px;
+    width: 110px;
     height: 20px;
 }
 
@@ -344,7 +344,7 @@ ul#nav li a {/* 8px padding top + 8px padding bottom + 38px line-height = 54px *
 
 ul#nav li a:hover {color: #fff;}
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a {color: #E8EFF7;     text-shadow: 0 1px 0 #4e7097;}
+ul#nav li.current a {/* color: #E8EFF7; */     text-shadow: 0 1px 0 #4e7097;}
 
 
 
@@ -389,7 +389,7 @@ ul#nav li.current a {color: #E8EFF7;     text-shadow: 0 1px 0 #4e7097;}
 .main-text h1 span,
 .main-text a {color: #eee;font-weight: 800;}
 .main-text p {
-    font: 16px/30px 'opensans-regular', sans-serif;
+    font: 17px/30px 'opensans-regular', sans-serif;
     padding: 0;
     margin: 12px 8% 0;
     /* text-shadow: 0px 1px 2px rgba(0, 0, 0, .2); */
@@ -648,7 +648,7 @@ a.active:after {
     float: right;
     color: #EBEEEE;
 }
-#call-to-action .action { margin-top: 18px; }
+#call-to-action .action {margin-left: 28px;}
 #call-to-action .action .button { text-align: center; }
 #call-to-action h2 {
     font: 28px/36px 'montserrat-bold', sans-serif;
@@ -662,8 +662,8 @@ a.active:after {
     color: #888;
     font-size: 17px;
     padding-right: 5px;
-    text-align: center;
 }
+
 #call-to-action p span {
     font-family: 'opensans-semibold', sans-serif;
     color: #bbb;
