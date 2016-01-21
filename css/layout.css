@@ -544,28 +544,57 @@ ul.features li:nth-child(even) { }
     letter-spacing: 2px;
 }
 
-.chart {
-  display: inline-block;
-  width: 95px;
-  height: 95px;
-  margin: 0 10px;
-  vertical-align: top;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-top: 22px;
+wrapper {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px;
 }
-.chart span {
-  display: block;
-  font-size: 2em;
-  font-weight: normal;
+
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
 }
-.chart canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
 }
+
+.rowe {
+  display: table-row;
+  background: #f6f6f6;
+}
+.rowe:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+.rowe.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #ea6153;
+}
+.rowe.blue {
+  background: #2d96dd;
+}
+@media screen and (max-width: 580px) {
+  .rowe {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}
+
 
 /* ------------------------------------------------------------------ */
 /* f. F.A.Q Section
